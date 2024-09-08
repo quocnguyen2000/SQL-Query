@@ -1,3 +1,14 @@
+/*
+
+KHỞI TẠO GIT
+- Tạo một repository mới: git init
+- thêm tất cả các tệp: git add .
+- Commit các thay đổi: git commit -m "Thông điệp commit"
+- Kết nối với remote repository: git remote add origin <URL_của_repository>
+- Push các thay đổi lên remote repository: git push -u origin master
+
+*/
+
 
 /* SYSTEM */
 
