@@ -157,3 +157,14 @@ WHERE [Tên NVBH] NOT IN ('VACANT', 'NV NPP', 'NV NPP ĐL', 'NV NPP ĐẠI LÝ')
 GROUP BY [Tên NVBH]
 HAVING SUM([Số KH trong tuyến phát sinh ĐH]) > 0
 ORDER BY ĐƠN DESC;
+
+
+--XEM TRƯỚC CÁC BẢN GHI SẼ BỊ XOÁ
+SELECT * FROM Gmap
+WHERE SUBSTRING(Ngày, 4, 2) = '03'
+AND RIGHT(Ngày, 4) = '2023';
+-- XOÁ CÁC HÀNG LÀ THÁN 3 VÀ NĂM LÀ 2023
+DELETE FROM Gmap
+WHERE SUBSTRING(Ngày, 4, 2) = '03'
+AND RIGHT(Ngày, 4) = '2023';
+
